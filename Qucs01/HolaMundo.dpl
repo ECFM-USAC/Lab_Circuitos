@@ -1,0 +1,30 @@
+<Qucs Schematic 0.0.18>
+<Properties>
+  <View=0,0,937,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=HolaMundo.dat>
+  <DataDisplay=HolaMundo.sch>
+  <OpenDisplay=1>
+  <Script=HolaMundo.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Tab 110 264 317 184 3 #c0c0c0 1 00 1 0 1 1 1 0 1 1 1 0 1 1 315 0 225 "" "" "">
+	<"VR1.V" #0000ff 0 3 1 0 0>
+	<"VR2.V" #0000ff 0 3 1 0 0>
+	<"VR3.V" #0000ff 0 3 1 0 0>
+  </Tab>
+</Diagrams>
+<Paintings>
+</Paintings>
