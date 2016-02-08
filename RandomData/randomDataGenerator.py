@@ -1,18 +1,35 @@
+'''
+Ing. Ivan Morales
+Lab. Circuitos Electricos
+Escuela de Ciencias Fisicas y Matematicas
+Universidad de San Carlos de Guatemala
+February 2016
+
+USAGE
+-------------------------
+1) Modify the function according to your needs. If a special function is required (i.e. cos, sin, exp) math module should be invoqued first.
+2) Modify the parameters to run the script and generate some random data based on the seed function. You may find these values at the end of this file.
+-------------------------
+'''
+
 import random
 import math
 
 class randomFit(object):
 
 	def function(self, x):
-		y = -1*x**2 + 2*x + 9 #Modify this function 
-		#y = math.exp(-0.3*x)*math.cos(0.9*x)
+	
+		#------------------ MODIFY THIS FUNCTION ------------------#
+		y = -1*x**2 + 2*x + 9 #Modify this line so it can be used as a seed function to generate the random data values
+		#y = math.exp(-0.3*x)*math.cos(0.9*x) #Another (more complex) random seed function using Python's Math library for special functions
+		#------------------ MODIFY THIS FUNCTION ------------------#
 		return y
 
-	def __init__(self, minLimit, maxLimit, step, xError, maxDev = 0.05, yError = 0): #Set Max Y-Values Error here (maxDev) in %
+	def __init__(self, minLimit, maxLimit, step, xError, maxDev = 0.05, yError = 0): #Do not modify anything here
 		self.minLimit = minLimit
 		self.maxLimit = maxLimit
 		self.step = step
-		self.maxDev = maxDev #% of deviation for current fucntion valued on x
+		self.maxDev = maxDev
 		self.xError = xError
 		self.yError = yError
 
@@ -84,11 +101,13 @@ class fileManagement(object):
 			f.write('\n')
 
 
+#------------------ MODIFY THESE VALUES ------------------#
 minRange = -4 #Min x-axis plot value
 maxRange = 6 #Max x-axis plot value
 step = 0.5 #How many points shall you get?
 xError = 0.2 #Arbitrary absolute x-value uncertainty		
 maxDeviation = 0.25 #Relative y-value (percent) error
+#------------------ MODIFY THESE VALUES ------------------#
 		
 
 a = randomFit(minRange, maxRange, step, xError, maxDeviation)
