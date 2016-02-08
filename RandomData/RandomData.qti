@@ -1,0 +1,214 @@
+QtiPlot 0.9.8 project file
+<scripting-lang>	muParser
+<windows>	3
+<table>
+Table1	30	2	8/02/16 11:27
+geometry	0	0	445	220	
+header	1[X]	2[Y]
+ColWidth	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13
+ReadOnlyColumn	0	0
+HiddenColumn	0	0
+Comments			
+WindowLabel		2
+<data>
+</data>
+</table>
+<table>
+data	20	4	8/02/16 11:30
+geometry	445	0	445	220	
+header	x[X]	y[Y]	xEr[xEr]	yEr[yEr]
+ColWidth	100	100	100	100	
+<com>
+</com>
+ColType	0;0/13	0;0/13	0;0/13	0;0/13
+ReadOnlyColumn	0	0	0	0
+HiddenColumn	0	0	0	0
+Comments	x	y	xEr	yEr	
+WindowLabel	/home/ivan/Desktop/data.txt	2
+<data>
+0	-4	-2.82829236091	0.2	-0.643663674461
+1	-3.5	-2.80257546766	0.2	-0.616509703219
+2	-3	-2.66064647567	0.2	-0.566900461583
+3	-2.5	-1.09644639881	0.2	-0.372119042728
+4	-2	-0.389895235767	0.2	-0.0828923200108
+5	-1.5	0.326761314736	0.2	0.0900176376594
+6	-1	0.879042545515	0.2	0.234044177524
+7	-0.5	1.29495912495	0.2	0.200959468907
+8	0	1.16717060354	0.2	0.229003535288
+9	0.5	0.875110679725	0.2	0.204277987078
+10	1	0.345901858798	0.2	0.0935969774941
+11	1.5	0.124510445209	0.2	0.0409993154733
+12	2	-0.100513065234	0.2	-0.0282567046429
+13	2.5	-0.225174123397	0.2	-0.0924301829652
+14	3	-0.418288933777	0.2	-0.0744699459455
+15	3.5	-0.385798974594	0.2	-0.0784027713432
+16	4	-0.314474001342	0.2	-0.0636842295112
+17	4.5	-0.134458872893	0.2	-0.0449981423821
+18	5	-0.0418973283585	0.2	-0.00883657349925
+19	5.5	0.0394102147493	0.2	0.0112053005967
+</data>
+</table>
+<multiLayer>
+Graph1	1	1	8/02/16 11:30
+geometry	172	-13	1128	688	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	400	300
+Alignement	0	0
+<AlignPolicy>0</AlignPolicy>
+<CommonAxes>0</CommonAxes>
+<graph>
+ggeometry	6	5	1101	622
+<PageGeometry>0.00535714	0.0078125	0.983036	0.971875</PageGeometry>
+PlotTitle	Title	#000000	4228
+<Antialiasing>0</Antialiasing>
+<Autoscaling>1</Autoscaling>
+<ScaleFonts>1</ScaleFonts>
+<GridOnTop>0</GridOnTop>
+<MissingDataGap>1</MissingDataGap>
+Background	#ffffff	0
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	1	1	1	
+AxesTitles	%(?X)	%(?Y)		%(?Y)	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	5124	5124	5124	5124
+AxesTitleDistance	2	2	2	2
+InvertedTitle	0	0	0	0
+TitleFont	Ubuntu	20	75	0	0	0
+ScaleFont0	Ubuntu	17	75	0	0	0
+ScaleFont1	Ubuntu	17	75	0	0	0
+ScaleFont2	Ubuntu	17	75	0	0	0
+ScaleFont3	Ubuntu	17	75	0	0	0
+AxisFont0	Ubuntu	17	50	0	0	0
+AxisFont1	Ubuntu	17	50	0	0	0
+AxisFont2	Ubuntu	17	50	0	0	0
+AxisFont3	Ubuntu	17	50	0	0	0
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#3c3c3c	#3c3c3c	#3c3c3c	#3c3c3c
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	0
+curve	data_x	data_y	1	0	#000000	0	1	7	1	#000000	#000000	0	#000000	14	1	2	0	0	19	1
+ErrorBars	0	data_x	data_y	data_xEr	1	8	#000000	1	1	1	0
+ErrorBars	1	data_x	data_y	data_yEr	1	8	#000000	1	1	1	0
+<Function>
+<Type>0</Type>
+<Title>NonLinearFit1</Title>
+<Expression>y0+A*exp(-x/t1)*cos(x*t2)</Expression>
+<Variable>x</Variable>
+<Range>-4	5.5</Range>
+<Points>100</Points>
+<Constant>A	1.06807071331982</Constant>
+<Constant>t1	3.60630110613736</Constant>
+<Constant>t2	0.874682034222474</Constant>
+<Constant>y0	0.0249081684554874</Constant>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>1</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<CurveType>0</CurveType>
+<Visible>1</Visible>
+</Function>
+scale	0	-4	2	0	7	5	0	0
+scale	1	-4	2	0	7	5	0	0
+scale	2	-6	6	0	7	5	0	0
+scale	3	-6	6	0	7	5	0	0
+LabelsFormat	0	6	0	6	0	6	0	6
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1
+MinorTicks	1	1	1	1
+TicksLength	5	9
+DrawAxesBackbone	1	1	1	1	1
+AxesLineWidth	1
+LabelsRotation	0	0	0	0
+LabelsPrefix				
+LabelsSuffix				
+TickLabelsSpace	4	4	4	4
+ShowTicksPolicy	0	0	0	0
+EnabledTickLabels	1	1	1	1
+<Legend>
+<Frame>1</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>0.18031088082902</x>
+<y>-0.57322175732218</y>
+<right>5.6020725388601</right>
+<bottom>-4</bottom>
+<attachTo>1</attachTo>
+<onTop>1</onTop>
+<visible>1</visible>
+<Text>
+\l(1)%(1)
+\l(4)%(4)
+<b>Dataset</b>: data_y
+<b>Function</b>: y0+A*exp(-x/t1)*cos(x*t2)
+<b>Chi^2/doF</b> = 9.26055640e-03
+<b>R^2</b> = 0.99176551
+<b>A</b> = 1.06807071e+00 +/- 4.23968223e-02
+<b>t1</b> = 3.60630111e+00 +/- 1.80554185e-01
+<b>t2</b> = 8.74682034e-01 +/- 1.85359150e-02
+<b>y0</b> = 2.49081685e-02 +/- 2.59397157e-02
+</Text>
+<Font>Ubuntu	17	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>1</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+<LinkXAxes>0</LinkXAxes>
+<ScaleLayers>1</ScaleLayers>
+</multiLayer>
+<open>1</open>
+<log>
+[8/02/16 11:29	Plot: ''Graph1'']
+Exponential decay of dataset: data_y, using function: y0+A*exp(-x/t)
+Weighting Method: Instrumental, using error bars dataset: data_yEr
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = -4.000000000000000e+00 to x = 5.500000000000000e+00
+A (amplitude) = 1.010781185333785e+00 +/- 3.200665676538419e-02
+t (e-folding time) = 9.687927925128840e-01 +/- 1.166479970862876e-02
+y0 (offset) = 2.608812002670475e-04 +/- 5.330471214560739e-04
+--------------------------------------------------------------------------------------
+Chi^2/doF = 2.293782901035058e-01
+R^2 = 0.999999966614669
+Adjusted R^2 = 0.999999960354919
+RMSE (Root Mean Squared Error) = 0.478934536344484
+RSS (Residual Sum of Squares) = 3.8994309317596
+---------------------------------------------------------------------------------------
+Iterations = 4
+Status = success
+---------------------------------------------------------------------------------------
+[8/02/16 11:34	Plot: ''Graph1'']
+Non-linear Fit of dataset: data_y, using function: y0+A*exp(-x/t1)*cos(x*t2)
+Weighting Method: No weighting
+Scaled Levenberg-Marquardt algorithm with tolerance = 0.0001
+From x = -3.500000000000000e+00 to x = 5.500000000000000e+00
+A = 1.068070713319819e+00 +/- 4.239682233982900e-02
+t1 = 3.606301106137364e+00 +/- 1.805541845704616e-01
+t2 = 8.746820342224741e-01 +/- 1.853591500372753e-02
+y0 = 2.490816845548735e-02 +/- 2.593971571071355e-02
+--------------------------------------------------------------------------------------
+Chi^2/doF = 9.260556402111634e-03
+R^2 = 0.991765508090348
+Adjusted R^2 = 0.988771147395929
+RMSE (Root Mean Squared Error) = 0.0962317847808698
+RSS (Residual Sum of Squares) = 0.11112667682534
+---------------------------------------------------------------------------------------
+Iterations = 8
+Status = success
+---------------------------------------------------------------------------------------
+</log>
